@@ -1,4 +1,4 @@
-# Job Openenings Scraper
+# Job Openings Scraper
 
 
 # :hammer: Built With
