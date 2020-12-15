@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require 'open-uri'
 require 'nokogiri'
 require 'byebug'
@@ -9,7 +10,7 @@ def start_app
   outputs(' ')
   outputs('  **** Welcome! ****')
   outputs(' ')
-  outputs('  In this application you can find a wide list of beautiful flowers bundles to give as presents on different occations')
+  outputs('  In this application you can find a long list of beautiful flowers bundle presents for different occations')
   continue?
 end
 
@@ -32,18 +33,18 @@ end
 def looping(flowers_arr, links)
   0.upto(flowers_arr.length - 1) do |i|
     if i < 10
-      outputs("  #{ i + 1 }-   #{ flowers_arr[i] }")
+      outputs("  #{i + 1}-   #{flowers_arr[i]}")
     elsif i < 100
       outputs("  #{i + 1}-  #{flowers_arr[i]}")
     else
       outputs("  #{i + 1}- #{flowers_arr[i]}")
     end
   end
-   printing('  Pick a number to see the details:  ')
-   number = (ask.to_i) - 1
-   system('cls')
-   system('clear')
-   show_details(links[number], flowers_arr[number])
+  printing('  Pick a number to see the details:  ')
+  number = ask.to_i - 1
+  system('cls')
+  system('clear')
+  show_details(links[number], flowers_arr[number])
 end
 
 def show_details(link, title)
