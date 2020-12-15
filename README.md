@@ -1,5 +1,5 @@
-# Job Openings Scraper
-
+# Flower Presents Scraper
+ This ruby application displays flower presents options and promptes the user to pick an option by entering a number to see a brief description and the price of the option
 
 # :hammer: Built With
 * Ruby
@@ -12,7 +12,7 @@
 * Clone this repository
 * Open your CLI
 * Navigate to the cloned folder
-* Type Ruby..
+* Type Ruby bin/main.rb
 
 
 ##  :bust_in_silhouette: Worked on this challenge:
@@ -22,7 +22,7 @@
 * LinkedIn:[@rayan rassam](https://www.linkedin.com/in/rayan-rassam-18a0a426/)
 
 ## Credits
-This project was built as per Main Technical Curriculum - Ruby section requirement, by Microverse
+This project was built as per Microverse Main Technical Curriculum - Ruby section, Capstone Project requirement
 
 ## Contribution
 Contributions, feedback and feature requests are welcome!
