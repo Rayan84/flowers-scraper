@@ -49,10 +49,11 @@ end
 def show_details(link, title)
   details_doc = Nokogiri::HTML(URI.open(link))
   description = details_doc.xpath('//div[@id="ru-custom-h2"]').inner_text
-  outputs''
-  outputs("  #{title}")
-  outputs''
+  price = details_doc.css('div.product-price').first.inner_text.delete('₱,')
+  price = price.to_i / 48
+  printing("  #{title}")
+  outputs("      price: $#{price}")
   outputs("  #{description}")
-  outputs''
+  outputs("More details on: #{link}")
   continue?
 end
