@@ -9,9 +9,9 @@
 * Atom
 
 # Instructions 
-* Clone the repository link
+* Clone this repository
 * Open your CLI
-* Navigate to the download folder
+* Navigate to the cloned folder
 * Type Ruby..
 
 
@@ -22,7 +22,7 @@
 * LinkedIn:[@rayan rassam](https://www.linkedin.com/in/rayan-rassam-18a0a426/)
 
 ## Credits
-This project was built as per Main Technical Curriculum - Ruby section by Microverse
+This project was built as per Main Technical Curriculum - Ruby section requirement, by Microverse
 
 ## Contribution
 Contributions, feedback and feature requests are welcome!
