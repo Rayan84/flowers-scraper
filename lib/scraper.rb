@@ -13,36 +13,48 @@ class Scraper
   end
 
   def continue?
-    printing('  Press "Enter" to see the list...')
-    answer = ask
-    flower_list if answer == ''
+    outputs ''
+    printing('  Press enter key to see the list...')
+    ask
+    flower_list
   end
 
   def flower_list
     doc = Nokogiri::HTML(URI.open('https://flowerstore.ph/'))
     flowers_string = doc.css('h2.product-title').inner_text
     urls_string = doc.xpath('//div[@class="tab-pane"]/div/div/div/a/@href')
-    puts flowers_string.class
     flowers = flowers_string.split(/\n+/)
     urls = urls_string.to_a
     listing(flowers, urls)
   end
 
   def listing(arr, links)
-    1.upto(arr.length - 1) do |i|
+    0.upto(arr.length - 1) do |i|
+
       if i < 10
-        outputs("  #{i}-   #{arr[i]}")
+        outputs("  #{i + 1}-   #{arr[i + 1]}")
       elsif i < 100
-        outputs("  #{i}-  #{arr[i]}")
+        outputs("  #{i + 1}-  #{arr[i + 1]}")
       else
-        outputs("  #{i}- #{arr[i]}")
+        outputs("  #{i + 1}- #{arr[i + 1]}")
       end
     end
+
     printing('  Pick a number to see the details:  ')
-    number = ask.to_i - 1
+    number = validate_num
     system('cls')
     system('clear')
-    show_details(links[number], arr[number])
+    show_details(links[number - 1], arr[number])
+  end
+
+  def validate_num
+    num = ask.to_i
+    if (1..126).include? num
+      num
+    else
+      printing '  Plsease enter a number from 1 to 126: '
+      validate_num
+    end
   end
 
   def show_details(link, title)
