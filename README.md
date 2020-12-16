@@ -16,7 +16,7 @@
 * Clone this repository to your local drive
 * Open your CLI
 * Navigate to the cloned folder
-* Type in Ruby bin/main.rb
+* Type in: Ruby bin/main.rb
 * Follow the instructions on the application
 
 

@@ -1,12 +1,15 @@
 require 'open-uri'
 require 'nokogiri'
+
 # creating the class scraper
 class Scraper
+  def initialize; end
+
   def start_app
     system('cls')
     system('clear')
     outputs(' ')
-    outputs('  **** Flower Presents Shop! ****')
+    outputs('  **** Flower Gift Shop! ****')
     outputs(' ')
     outputs('  In this application you can find a list of beautiful flowers bundle presents for different occations')
     continue?
@@ -14,9 +17,15 @@ class Scraper
 
   def continue?
     outputs ''
-    printing('  Press enter key to see the list...')
-    ask
-    flower_list
+    printing('  Press enter to see the list, q to quit..:  ')
+    answer = ask
+    if answer == 'q'
+      abort '  Goodbye...'
+    elsif answer == ''
+      flower_list
+    else
+      continue?
+    end
   end
 
   def flower_list
@@ -29,8 +38,7 @@ class Scraper
   end
 
   def listing(arr, links)
-    0.upto(arr.length - 1) do |i|
-
+    0.upto(126) do |i|
       if i < 10
         outputs("  #{i + 1}-   #{arr[i + 1]}")
       elsif i < 100
@@ -49,10 +57,10 @@ class Scraper
 
   def validate_num
     num = ask.to_i
-    if (1..126).include? num
+    if (1..127).include? num
       num
     else
-      printing '  Plsease enter a number from 1 to 126: '
+      printing '  Plsease enter a number from 1 to 127: '
       validate_num
     end
   end
