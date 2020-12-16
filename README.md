@@ -1,14 +1,18 @@
 # Flower Presents Scraper
  This ruby application displays flower presents options and promptes the user to pick an option by entering a number to see a brief description and the price of the option
 
-# :hammer: Built With
+## Screenshot
+![screenshot](screenshot.png)
+
+
+## :hammer: Built With
 * Ruby
 * Nokogiri
 * Robocop
 * RSpec
 * Atom
 
-# Instructions 
+## Instructions 
 * Clone this repository to your local drive
 * Open your CLI
 * Navigate to the cloned folder
