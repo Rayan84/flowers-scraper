@@ -1,7 +1,5 @@
-# frozen_string_literal: true
-
 require_relative '../lib/scraper.rb'
-
+scraper = Scraper.new
 def outputs(text)
   puts(text)
 end
@@ -16,4 +14,4 @@ def ask
   quest
 end
 
-start_app
+scraper.start_app

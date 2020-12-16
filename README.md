@@ -9,10 +9,11 @@
 * Atom
 
 # Instructions 
-* Clone this repository
+* Clone this repository to your local drive
 * Open your CLI
 * Navigate to the cloned folder
-* Type Ruby bin/main.rb
+* Type in Ruby bin/main.rb
+* Follow the instructions on the application
 
 
 ##  :bust_in_silhouette: Worked on this challenge:
