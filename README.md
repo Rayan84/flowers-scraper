@@ -1,5 +1,5 @@
-# Flower Presents Scraper
- This ruby application displays flower presents options and promptes the user to pick an option by entering a number to see a brief description and the price of the option
+# Flowers Gift Shop Scraper
+ This ruby application displays flowers gifts options and promptes the user to pick an option by entering a number to see a brief description and the price of the option
 
 ## Screenshot
 ![screenshot](screenshot.png)
@@ -19,7 +19,8 @@
 * Type in: Ruby bin/main.rb
 * Follow the instructions on the application
 
-
+## Use online
+Link: [Live Demo Link](https://repl.it/@Rayan84/flowers-scraper#README.md)
 ##  :bust_in_silhouette: Worked on this challenge:
 # Rayan Rassam
 * Github:[@Rayan84](https://github.com/Rayan84)
