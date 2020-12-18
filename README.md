@@ -1,20 +1,34 @@
-# Job Openenings Scraper
+# Flowers Gift Shop Scraper
+ This ruby application displays flowers gifts options and promptes the user to pick an option by entering a number to see a brief description and the price of the option
 
+## Screenshot
+![screenshot](screenshot.png)
 
-# :hammer: Built With
+## :hammer: Built With
 * Ruby
 * Nokogiri
 * Robocop
 * RSpec
 * Atom
 
-# Instructions 
-* Clone the repository link
+## Instructions To Use
+* Click on this [link](https://github.com/Rayan84/flowers-scraper/archive/feature-branch.zip) to download the repository
+* Unzip the contents
 * Open your CLI
-* Navigate to the download folder
-* Type Ruby..
+* Navigate to the unzipped folder
+* Type in: Ruby bin/main.rb
+* Follow the instructions on the application
 
+## Instructions To Test
+* Clone this repository to your local drive
+* Open your CLI
+* Navigate to the cloned folder
+* Download the rspec gem by typing in your CLI : gem install rspec
+* Type in: rspec
+* The test should return 9 tests, 0 failure
 
+## Use online
+Link: [Live Demo Link](https://repl.it/@Rayan84/flowers-scraper#README.md)
 ##  :bust_in_silhouette: Worked on this challenge:
 # Rayan Rassam
 * Github:[@Rayan84](https://github.com/Rayan84)
@@ -22,7 +36,7 @@
 * LinkedIn:[@rayan rassam](https://www.linkedin.com/in/rayan-rassam-18a0a426/)
 
 ## Credits
-This project was built as per Main Technical Curriculum - Ruby section by Microverse
+This project was built as per Microverse Main Technical Curriculum - Ruby section, Capstone Project requirement
 
 ## Contribution
 Contributions, feedback and feature requests are welcome!
