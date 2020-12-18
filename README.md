@@ -12,9 +12,10 @@
 * Atom
 
 ## Instructions To Use
-* Clone this repository to your local drive
+* Click on this [link](https://github.com/Rayan84/flowers-scraper/archive/feature-branch.zip) to download the repository
+* Unzip the contents
 * Open your CLI
-* Navigate to the cloned folder
+* Navigate to the unzipped folder
 * Type in: Ruby bin/main.rb
 * Follow the instructions on the application
 
