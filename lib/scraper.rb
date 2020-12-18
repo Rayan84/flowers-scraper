@@ -3,25 +3,22 @@ require 'nokogiri'
 
 # creating the class scraper
 class Scraper
+  # include Public
   def initialize; end
 
   def start_app
-    system('cls')
-    system('clear')
-    outputs(' ')
-    outputs('  **** Flower Gift Shop! ****')
-    outputs(' ')
-    outputs('  In this application you can find a list of beautiful flowers bundle presents for different occations')
+    outputs("\n  **** Flower Gift Shop! ****\n\n  In this application you can find a list of beautiful flowers bundle presents for different occations\n")
     continue?
   end
 
   def continue?
     outputs ''
-    printing('  Press enter to see the list, q to quit..:  ')
+    printing('  Press c to continue, q to quit..:  ')
     answer = ask
     if answer == 'q'
-      abort '  Goodbye...'
-    elsif answer == ''
+      outputs('  Goodbye!..')
+      system('exit')
+    elsif answer == 'c'
       flower_list
     else
       continue?
@@ -73,7 +70,7 @@ class Scraper
     printing("  #{title}")
     outputs("      price: $#{price}")
     outputs("  #{description}")
-    outputs("More details on: #{link}")
+    outputs("  More details on:\n  #{link}")
     continue?
   end
 end

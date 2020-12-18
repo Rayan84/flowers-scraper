@@ -4,7 +4,6 @@
 ## Screenshot
 ![screenshot](screenshot.png)
 
-
 ## :hammer: Built With
 * Ruby
 * Nokogiri
@@ -12,12 +11,20 @@
 * RSpec
 * Atom
 
-## Instructions 
+## Instructions To Use
 * Clone this repository to your local drive
 * Open your CLI
 * Navigate to the cloned folder
 * Type in: Ruby bin/main.rb
 * Follow the instructions on the application
+
+## Instructions To Test
+* Clone this repository to your local drive
+* Open your CLI
+* Navigate to the cloned folder
+* Download the rspec gem by typing in your CLI : gem install rspec
+* Type in: rspec
+* The test should return 9 tests, 0 failure
 
 ## Use online
 Link: [Live Demo Link](https://repl.it/@Rayan84/flowers-scraper#README.md)
