@@ -3,7 +3,6 @@ require 'nokogiri'
 
 # creating the class scraper
 class Scraper
-
   def start_app
     outputs("\n  **** Flower Gift Shop! ****\n\n  In this application you can find a list of beautiful flowers bundle presents for different occations\n")
     continue?
